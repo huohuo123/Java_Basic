@@ -30,6 +30,7 @@ public class HashMapTest extends Thread{
         }
 
         System.out.println(Thread.currentThread().getName()+"线程即将结束");
+        System.out.println();
     }
 
     public static void main(String[] args) {

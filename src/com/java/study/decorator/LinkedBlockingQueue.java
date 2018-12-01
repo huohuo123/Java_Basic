@@ -36,7 +36,7 @@ class Producer implements Runnable {
 		try {
 			Apple apple = new Apple();
 			mAbq.put(apple);
-			System.out.println("生产:" + apple);
+			System.out.println("生产:" + apple.toString());
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -66,7 +66,7 @@ class Consumer implements Runnable {
 
 	private void consumer() throws InterruptedException {
 		Apple apple = mAbq.take();
-		System.out.println("消费Apple=" + apple);
+		System.out.println("消费Apple=" + apple.toString());
 	}
 }
 

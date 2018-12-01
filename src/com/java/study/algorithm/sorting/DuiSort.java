@@ -10,7 +10,12 @@ import java.util.Arrays;
 public class DuiSort {
 
     public static void main(String[] args) {
-        int[] array = {49,38,65,97,76,13,27,49};
+        // int[] array = {49,38,65,97,76,13,27,49};
+        int[] array=new int[10];
+        //随机数赋值，只考虑随机时间
+        for (int i=0;i<array.length;i++){
+           array[i]= (int) (Math.random()*100000);
+        }
         heapSort(array,array.length);
         System.out.println(Arrays.toString(array));
     }
