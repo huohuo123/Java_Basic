@@ -8,9 +8,9 @@ package com.java.study.java;
 public class Test1 {
 
 	public static void main(String[] args) {
-		String ss=null;
-		int sss= Integer.parseInt(ss==null?"0":ss);
-		System.out.println(sss);
+		double d=0.3d;
+		int s= (int) (d*3);
+		System.out.println(s);
 	}
 
 }
